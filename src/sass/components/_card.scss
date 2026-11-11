@@ -1,0 +1,110 @@
+.card {
+  background: #fff;
+  width: 45rem;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  border-radius: 1rem;
+
+  &__title {
+    font-size: 3.2rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: $primary-color-light-card;
+  }
+
+  &__line {
+    display: flex;
+    border: 1px solid $primary-color-light-card;
+    width: 6rem;
+  }
+
+  &__price {
+    font-size: 8rem;
+    font-weight: 600;
+    color: $primary-color-light-card;
+  }
+
+  &__dur {
+    font-size: 2rem;
+    font-weight: 400;
+    color: #777;
+    letter-spacing: 1px;
+  }
+
+  &__item {
+    font-size: 2rem;
+    color: #505050;
+    letter-spacing: 0.5px;
+  }
+
+  &__items {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    margin: 5rem 0 15rem 0;
+    position: relative;
+    z-index: 10;
+  }
+
+  &__item-gp {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  &__icon {
+    width: 1.5rem;
+  }
+
+  &__icon-l {
+    width: 2.5rem;
+  }
+
+  &__btn {
+    text-decoration: none;
+    font-size: 2rem;
+    color: #fff;
+    background: $primary-color-light-card;
+    display: flex;
+    align-items: center;
+    padding: 1.2rem 5rem;
+    gap: 1rem;
+    border-radius: 10rem;
+    margin: 2rem 0;
+    position: relative;
+    z-index: 2;
+    letter-spacing: 0.5px;
+  }
+
+  &__bg {
+    position: absolute;
+    bottom: -12%;
+    right: 0%;
+    z-index: 1;
+  }
+}
+
+.card-container {
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.m-c {
+  color: $secondary-color-card;
+}
+.m-c-btn {
+  background-color: $secondary-color-card;
+}
+
+.m-c-line {
+  border: 1px solid $secondary-color-card;
+}
+.rot-45 {
+  transform: rotate(45deg);
+}
